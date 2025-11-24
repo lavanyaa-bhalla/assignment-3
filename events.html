@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events • Campus Carnival</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Campus <span class="accent">Carnival</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule / Results</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Events</h2>
+
+    <p>We have a range of events across technical, cultural, and sports categories. Use the register page to sign up.</p>
+
+    <section class="events-list">
+      <h3>Technical Events</h3>
+      <ul>
+        <li><strong>Hackathon</strong> — 24-hour team coding challenge. (Teams of up to 4)</li>
+        <li><strong>Paper Presentation</strong> — Research or project presentations. (15 min)</li>
+        <li><strong>RoboRace</strong> — Autonomous line follower and obstacle event.</li>
+      </ul>
+
+      <h3>Cultural Events</h3>
+      <ol>
+        <li><strong>Battle of Bands</strong> — Band performance (max 6 members).</li>
+        <li><strong>Solo Singing</strong> — 8-minute performance, genre open.</li>
+        <li><strong>Dance Crew</strong> — Group choreography competition.</li>
+      </ol>
+
+      <h3>Sports</h3>
+      <ul>
+        <li><strong>3-on-3 Basketball</strong></li>
+        <li><strong>Table Tennis Singles</strong></li>
+      </ul>
+    </section>
+
+    <aside class="box">
+      <h4>Pro tip</h4>
+      <p>Bring a printout of your registration confirmation to the event for quick entry. Check the schedule page for timings.</p>
+      <a class="btn" href="register.html">Register Now</a>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year2"></span> Campus Carnival</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

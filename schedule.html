@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Schedule & Results • Campus Carnival</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Campus <span class="accent">Carnival</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule / Results</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Schedule</h2>
+    <p>Below is the event schedule. After the fest, organizers will update the Results column.</p>
+
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>Time</th><th>Event</th><th>Venue</th><th>Coordinator</th><th>Results</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 - 11:00</td>
+          <td>Paper Presentation</td>
+          <td>Room A101</td>
+          <td>Prof. Sharma</td>
+          <td class="muted">TBD</td>
+        </tr>
+        <tr>
+          <td>10:00 - 16:00</td>
+          <td>Hackathon (Day 1)</td>
+          <td>Lab 3</td>
+          <td>Ms. Rao</td>
+          <td class="muted">Live scoring</td>
+        </tr>
+        <tr>
+          <td>17:00 - 20:00</td>
+          <td>Battle of Bands</td>
+          <td>Auditorium</td>
+          <td>Mr. Joshi</td>
+          <td class="muted">TBD</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="results-note box">
+      <h4>How results will appear</h4>
+      <p>After each event ends, results will be added to this page by organizers. Registered participants will receive email notifications.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year3"></span> Campus Carnival</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>

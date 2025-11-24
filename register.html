@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register • Campus Carnival</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Campus <span class="accent">Carnival</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule / Results</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Participant Registration</h2>
+    <p>Fill in the form below. Your registration is saved locally (for demo). Organizers will contact you with final confirmation.</p>
+
+    <form id="regForm" class="form-card" onsubmit="return false;">
+      <label>Name <input id="name" required minlength="3" /></label>
+      <label>Email <input id="email" type="email" required /></label>
+      <label>Phone <input id="phone" pattern="[0-9]{10}" placeholder="10 digits" required /></label>
+
+      <label>Event
+        <select id="eventSelect" required>
+          <option value="">Choose an event</option>
+          <option>Hackathon</option>
+          <option>Paper Presentation</option>
+          <option>RoboRace</option>
+          <option>Battle of Bands</option>
+          <option>Solo Singing</option>
+          <option>Dance Crew</option>
+        </select>
+      </label>
+
+      <label>Team Members (comma separated, if any)
+        <input id="team" placeholder="Name1, Name2">
+      </label>
+
+      <label>College / Dept <input id="dept" /></label>
+
+      <div class="form-actions">
+        <button class="btn" id="submitBtn">Submit Registration</button>
+        <button class="btn ghost" type="button" id="clearBtn">Clear Saved</button>
+      </div>
+
+      <p id="regMsg" class="muted"></p>
+    </form>
+
+    <section class="box">
+      <h4>Registered Participants (local demo)</h4>
+      <div id="savedList">No registrations yet.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year4"></span> Campus Carnival</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    document.getElementById('year4').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

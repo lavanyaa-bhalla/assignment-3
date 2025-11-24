@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery • Campus Carnival</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Campus <span class="accent">Carnival</span></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule / Results</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Photo Gallery</h2>
+    <p>Photos from previous years. Click to enlarge.</p>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Using the uploaded image path so this works immediately -->
+      <figure>
+  <img src="images/gallery1.jpg" alt="Last year highlights">
+  <figcaption>Last year highlights</figcaption>
+</figure>
+
+<figure>
+  <img src="images/gallery2.jpg" alt="Campus stage">
+  <figcaption>Campus stage</figcaption>
+</figure>
+
+<figure>
+  <img src="images/gallery3.jpg" alt="Workshop">
+  <figcaption>Workshop</figcaption>
+</figure>
+
+<figure>
+  <img src="images/gallery4.jpg" alt="Awards">
+  <figcaption>Awards</figcaption>
+</figure>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year5"></span> Campus Carnival</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year5').textContent = new Date().getFullYear();</script>
+</body>
+</html>
